@@ -1,0 +1,130 @@
+/*
+    Palette
+    https://coolors.co/palette/283d3b-197278-edddd4-c44536-772e25
+*/
+
+.flex {
+    display: flex;
+}
+
+#the_god {
+    margin-left: 20px;
+}
+
+#steve {
+    position: absolute;
+}
+
+body {
+    /* Sets the background image as a blurred minecraft picture */
+    background-image: url("images/photos/background.jpg");
+    /* By default the image will repeat itself until the space is filled, but I just want one picture */
+    background-repeat: no-repeat;
+    /* The picture is small so it doesn't cover it all */
+    background-size: cover;
+}
+
+.main_square {
+    /* Sets the background to white */
+    background-color: white;
+    /* Rounds the border */
+    border-radius: 10px;
+    /* So that it doesn't fill the entire page and we can actually see the background image */
+    margin: 10%;
+}
+
+nav {
+    /* Sets the background to that color */
+    background-color: #197278;
+    /* Rounds the top corners of the border */
+    border-radius: 10px 10px 0px 0px;
+}
+
+div nav div {
+    padding: 1.75% 5%;
+}
+
+nav ul {
+    /* To stay in the same line as the logo */
+    display: inline;
+    float: right;
+    padding: 0.5% 0 0 0;
+    margin: 0;
+    width: 270px;
+}
+
+nav li {
+    /* So that it will be a horizontal list */
+    display: inline;
+    padding-left: 5%;
+}
+
+ul li a {
+    color: white;
+    /* By default the links have a underline, but I want it without the underline */
+    text-decoration: none;
+    /* MAKES IT UPPERCASE */
+    text-transform: uppercase;
+}
+
+ul li a:hover {
+    color: #283D3B;
+}
+
+main {
+    margin: 2.5% 10%;
+    /* Aligns everything in the center */
+    text-align: center;
+}
+
+p, li {
+    text-align: justify;
+}
+
+section {
+    border-top: 1px solid gainsboro;
+    margin-top: 2.5%;
+    padding-top: 2.5%;
+}
+
+section li {
+    margin: 0 10%;
+}
+
+section img {
+    border-radius: 10px;
+}
+
+#github {
+    background-color: inherit;
+    border-width: 1px;
+    border-radius: 10px;
+    width: 270px;
+}
+
+#github:hover {
+    background-color: #96b8b3;
+}
+
+footer {
+    /* Sets the background to that color */
+    background-color: #C44536;
+    /* Rounds the bottom corners of the border */
+    border-radius: 0px 0px 10px 10px;
+    color: white;
+    /* Makes it a little thicker */
+    height: 50px;
+    /* Aligns everything in the center */
+    text-align: center;
+    padding-top: 1%;
+}
+
+#to_top {
+    font-weight: bold;
+    color: inherit;
+    text-decoration: none;
+}
+
+#to_top:hover {
+    color: #772E25;
+}
