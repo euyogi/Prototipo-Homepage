@@ -61,6 +61,7 @@ body {
     background-color: white;
     /* Rounds the border */
     border-radius: 10px;
+    box-shadow: 10px 10px 10px #1A237E;
     /* So that it doesn't fill the entire page and we can actually see the background image */
     margin: 10%;
 }
