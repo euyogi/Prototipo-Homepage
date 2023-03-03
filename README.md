@@ -1,5 +1,7 @@
 # Projeto-Homepage
-Um site apresentando o jogo Minecraft, meu treinamento pessoal de HTML, CSS e JavaScript :)
+A ideia era um site sobre o jogo Minecraft, acho que ficou bem informativo, principalmente pelo conteúdo ser adaptado do Minecraft Wiki.
+No meu notebook está funcionando muito bem, mas melhorias ainda são possiveis.
+Demorei um certo tempo para a funcionalidade do bonequinho andando emcima da página funcionar então estou feliz que funcionou no fim.
 
 <h2>Tela inicial:</h2>
 
