@@ -7,17 +7,20 @@
         <link href="styles.css" rel="stylesheet">
         <title>My Webpage | About</title>
         <link rel="icon" type="image/png" href="images/logos/grass.png"/>
+        <meta name="theme-color" content="#8bb0fb">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
+        <script type="text/javascript" src="script.js"></script>
         <div class="main_square">
             <nav>
-                <div id="steve_place">
-                    <img name="steve" src="images/steve/0.png">
-                    <img name="steve" src="images/steve/1.png">
-                    <img name="steve" src="images/steve/2.png">
-                    <img name="steve" src="images/steve/3.png">
-                    <img name="steve" src="images/steve/4.png">
-                    <img name="steve" src="images/steve/5.png">
+                <img id="steve" src="images/steve/0.png">
+                <div id="control_steve">
+                    <p>Try in your keyboard:</p>
+                    <button id="w" disabled="true">w</button><br>
+                    <button id="a">a</button>
+                    <button disabled="true">s</button>
+                    <button id="d">d</button>
                 </div>
                 <div>
                     <a id="logo" href="index.html"><img width="200px" src="images/logos/minecraft.svg"></a>
@@ -35,7 +38,7 @@
                     <h2>Who are you</h2>
                     <p>
                         I am a brazilian student that loves programming, and I am taking
-                        the CS50 Course before I enter in university, and it is wonderful course indeed. 
+                        the <a href="https://pll.harvard.edu/course/cs50-introduction-computer-science?delta=0" target="_blank">CS50 Course</a> before I enter in university, and it is wonderful course indeed. 
                     </p>
                     <a href="https://github.com/euyogi" target="_blank">
                         <button id="github">Check out my <img src="images/logos/github.png"></button>

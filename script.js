@@ -1,99 +1,67 @@
-function change_img(id, src) {
-    // Gets the image element.
-    let img = document.getElementById(id);
-
-    // Checks if it exists.
-    if (img == null) {
-        console.error("There's no element with id = " + id);
-        return false;
-    }
-
-    // Changes the src of that image.
-    if (img.tagName != "IMG") {
-        console.error("The element with id = " + id + " isn't an image");
-        return false;
-    }
-
-    img.src = src;
+function change_steve(src) {
+    steve.src = src;
 
     return true;
 }
 
-function move_steve(x = 0, y = 0) {
-    // Gets the nav positions.
-    let nav = document.getElementsByTagName("nav")[0];
-    let nav_pos = nav.getBoundingClientRect();
-
-    // Gets the steve positions.
-    let steve = document.getElementById("steve");
+function move_steve(x = 0) {
     let steve_pos = steve.getBoundingClientRect();
-    
-    // If the steve is inside de nav move it, if it is in the border don't.
-    if (x > 0 && steve_pos.right < nav_pos.width + nav_pos.left || x < 0 && steve_pos.left > nav_pos.left)
-        steve.style.left = steve_pos.left + x + "px";
 
-    if (y > 0 && steve_pos.bottom < nav_pos.height + nav_pos.top || y < 0 && steve_pos.top > nav_pos.top)
-        steve.style.top = steve_pos.top + y + "px";
+    // If the steve is inside de nav move it, if it is in the border don't.
+    if (x > 0 && steve_pos.right < nav_pos.width + nav_pos.left)
+        steve.style.transform = `translateX(${steve_pos.left - initial_left_pos + x}px)`;
+    else if (x < 0 && steve_pos.left > nav_pos.left)
+        steve.style.transform = `scaleX(-1) translateX(${-(steve_pos.left - initial_left_pos + x)}px)`;
 
     return true;
 }
 
 // After DOM has been loaded.
 document.addEventListener("DOMContentLoaded", function() {
-    let img_id = "steve", idx = 0;
-    
-    document.addEventListener("keypress", function(event) {
+    // Gets the nav positions.
+    let nav = document.getElementsByTagName("nav")[0];
+    nav_pos = nav.getBoundingClientRect();
+
+    // Gets the steve positions.
+    steve = document.getElementById("steve");
+    initial_left_pos = steve.getBoundingClientRect().left;
+
+    a_btn = document.getElementById("a");
+    d_btn = document.getElementById("d");
+
+    let idx = 0;
+
+    document.addEventListener("keydown", function(event) {
         if (idx > 5)
             idx = 0;
 
         // Change the image to the next one whenever you press w or a or s or d.
-        if (event.key == "w" || event.key == "a" || event.key == "s" || event.key == "d") {
-            change_img(img_id, `images/${img_id}/${idx}.png`);
-
+        if (event.key == "d" || event.key == "a") {
+            steve.src = `images/steve/${idx}.png`
             idx++;
         }
-
+        
         // Moves the steve if you press w or a or s or d.
-        switch (event.key) {
-            case "w":
-                move_steve(0, -3);
-                break;
-            case "a":
-                move_steve(-3);
-                break;
-            case "s":
-                move_steve(0, 3);
-                break;
-            case "d":
-                move_steve(3);
-                break;
+        if (event.key == "a") {
+            move_steve(-6);
+            a_btn.style.color = "white";
+            a_btn.style.backgroundColor = "#197278";
+        }
+        else if (event.key =="d") {
+            move_steve(6);
+            d_btn.style.color = "white";
+            d_btn.style.backgroundColor = "#197278";
         }
     });
-    for (let el of document.getElementsByName("wasd_btns")){
-        el.addEventListener("click", function() {
-            if (idx > 5)
-                idx = 0;
 
-            // Change the image to the next one whenever you press w or a or s or d.
-            change_img(img_id, `images/${img_id}/${idx}.png`);
-
-            idx++;
-            console.log(el.innerHTML);
-            // Moves the steve if you press w or a or s or d.
-            switch (el.innerHTML) {
-                case "w":
-                    move_steve(0, -3);
-                    break;
-                case "a":
-                    move_steve(-3);
-                    break;
-                case "s":
-                    move_steve(0, 3);
-                    break;
-                case "d":
-                    move_steve(3);
-                    break;
-            }
-        });
-    }
+    document.addEventListener("keyup", function(event) {
+        if (event.key == "a") {
+            a_btn.style.color = "";
+            a_btn.style.backgroundColor = "";
+        }
+        else if (event.key =="d") {
+            d_btn.style.color = "";
+            d_btn.style.backgroundColor = "";
+        }
+    });
 });
