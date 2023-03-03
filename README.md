@@ -3,4 +3,4 @@ Um site apresentando o jogo Minecraft, meu treinamento pessoal de HTML, CSS e Ja
 
 <h2>Para testar:</h2>
 
-<a align="center" href="https://euyogi.github.io/Projeto-Homepage/" target="_blank">Abrir Projeto-Homepage</a>
+<a align="center" href="https://euyogi.github.io/Projeto-Homepage/" target="_blank" rel="noopener">Abrir Projeto-Homepage</a>
