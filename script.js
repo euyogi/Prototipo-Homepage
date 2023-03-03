@@ -19,24 +19,21 @@ function change_img(id, src) {
     return true;
 }
 
-function move_el(id, x = 0, y = 0) {
-    // Gets the element.
-    let el = document.getElementById(id)
+function move_steve(x = 0, y = 0) {
+    // Gets the nav positions.
+    let nav = document.getElementsByTagName("nav")[0];
+    let nav_pos = nav.getBoundingClientRect();
 
-    // Checks if it exists.
-    if (el == null) {
-        console.error("There's no element with id = " + id);
-        return false;
-    }
-
-    let pos = el.getBoundingClientRect();
+    // Gets the steve positions.
+    let steve = document.getElementById("steve");
+    let steve_pos = steve.getBoundingClientRect();
     
-    // Moves that image horizontally by the value of x and vertically by the value of y.
-    if (x != 0)
-        el.style.left = pos.left + x + "px";
+    // If the steve is inside de nav move it, if it is in the border don't.
+    if (x > 0 && steve_pos.right < nav_pos.width + nav_pos.left || x < 0 && steve_pos.left > nav_pos.left)
+        steve.style.left = steve_pos.left + x + "px";
 
-    if (y != 0)
-        el.style.top = pos.top + y + "px";
+    if (y > 0 && steve_pos.bottom < nav_pos.height + nav_pos.top || y < 0 && steve_pos.top > nav_pos.top)
+        steve.style.top = steve_pos.top + y + "px";
 
     return true;
 }
@@ -49,37 +46,54 @@ document.addEventListener("DOMContentLoaded", function() {
         if (idx > 5)
             idx = 0;
 
-        // Change the src in the <img> tag.
-        change_img(img_id, `images/${img_id}/${idx}.png`);
+        // Change the image to the next one whenever you press w or a or s or d.
+        if (event.key == "w" || event.key == "a" || event.key == "s" || event.key == "d") {
+            change_img(img_id, `images/${img_id}/${idx}.png`);
 
-        idx++;
+            idx++;
+        }
 
+        // Moves the steve if you press w or a or s or d.
         switch (event.key) {
-            // Move the <img> a little bit.
-            case 119:
-                move_el(img_id, y = 3);
+            case "w":
+                move_steve(0, -3);
                 break;
-            case 115:
-                move_el(img_id, y = -3);
+            case "a":
+                move_steve(-3);
                 break;
-            case 100:
-                move_el(img_id, 3);
+            case "s":
+                move_steve(0, 3);
                 break;
-            case 97:
-                move_el(img_id, -3);
+            case "d":
+                move_steve(3);
                 break;
         }
     });
+    for (let el of document.getElementsByName("wasd_btns")){
+        el.addEventListener("click", function() {
+            if (idx > 5)
+                idx = 0;
 
-    // Repeat until the image gets on the div end
+            // Change the image to the next one whenever you press w or a or s or d.
+            change_img(img_id, `images/${img_id}/${idx}.png`);
 
-
-
-    // When it reaches the div end
-
-
-
-    // Do the same as ine 3 to line 7 but from div end to div start and with mirrored images
-
-
+            idx++;
+            console.log(el.innerHTML);
+            // Moves the steve if you press w or a or s or d.
+            switch (el.innerHTML) {
+                case "w":
+                    move_steve(0, -3);
+                    break;
+                case "a":
+                    move_steve(-3);
+                    break;
+                case "s":
+                    move_steve(0, 3);
+                    break;
+                case "d":
+                    move_steve(3);
+                    break;
+            }
+        });
+    }
 });

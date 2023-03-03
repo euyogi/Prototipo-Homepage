@@ -15,6 +15,25 @@
     position: absolute;
 }
 
+#control_steve {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    padding: 0;
+    width: 100px;
+}
+
+#control_steve button {
+    padding: 0;
+    width: 30px;
+    height: 30px;
+}
+
+#w {
+    margin-left: 34px;
+    margin-bottom: 4px;
+}
+
 body {
     /* Sets the background image as a blurred minecraft picture */
     background-image: url("images/photos/background.jpg");
