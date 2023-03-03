@@ -43,25 +43,33 @@ function move_el(id, x = 0, y = 0) {
 
 // After DOM has been loaded.
 document.addEventListener("DOMContentLoaded", function() {
-    let img_id = "steve"
-
-    // Each 1s changes the image and moves it.
-    let idx = 0;
-    interval = setInterval(function () {
+    let img_id = "steve", idx = 0;
+    
+    document.addEventListener("keypress", function(event) {
         if (idx > 5)
             idx = 0;
 
         // Change the src in the <img> tag.
-        if (!change_img(img_id, `images/${img_id}/${idx}.png`))
-            clearInterval(interval);
+        change_img(img_id, `images/${img_id}/${idx}.png`);
 
         idx++;
 
-        // Move the <img> a little bit.
-        if (!move_el(img_id, 3))
-            clearInterval(interval);
-    }, 100);
-    
+        switch (event.key) {
+            // Move the <img> a little bit.
+            case 119:
+                move_el(img_id, y = 3);
+                break;
+            case 115:
+                move_el(img_id, y = -3);
+                break;
+            case 100:
+                move_el(img_id, 3);
+                break;
+            case 97:
+                move_el(img_id, -3);
+                break;
+        }
+    });
 
     // Repeat until the image gets on the div end
 
