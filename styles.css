@@ -3,166 +3,145 @@
     https://coolors.co/palette/283d3b-197278-edddd4-c44536-772e25
 */
 
-.flex {
-    display: flex;
-}
+.flex {display: flex;}
 
-#the-god {
-    margin-left: 20px;
-}
+#the-god {margin-left: 20px;}
 
 #steve {
-    box-sizing: content-box;
-    position: absolute;
-    display: inline-block;
-    margin-top: -31px;
+  box-sizing: content-box;
+  position: absolute;
+  display: inline-block;
+  margin-top: -31px;
 }
 
-#wasd-btns {
-    position: fixed;
-    right: 50px;
-    bottom: 50px;
-    padding: 0;
-    width: 100px;
+#wasd-buttons {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  padding: 0;
+  width: 100px;
 }
 
-#wasd-btns p {
-    background-color: #8896b8b3;
-    border-radius: 10px;
-    font-weight: bold;
-    padding: 5px;
-    color: white;
-    box-shadow: 10px 10px 10px #21130d;
+#wasd-buttons p {
+  background-color: #8896b8b3;
+  border-radius: 10px;
+  font-weight: bold;
+  padding: 5px;
+  color: white;
+  box-shadow: 10px 10px 10px #21130d;
 }
 
-#wasd-btns button {
-    border-radius: 5px;
-    padding: 0;
-    width: 30px;
-    height: 30px;
-    pointer-events: none;
-    box-shadow: 10px 10px 10px #21130d;
+#wasd-buttons button {
+  border-radius: 5px;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  pointer-events: none;
+  box-shadow: 10px 10px 10px #21130d;
 }
 
-#w {
-    margin-left: 34px;
-    margin-bottom: 4px;
-}
+#w {margin: 0 0 4px 34px;}
 
 body {
-    /* Sets the background image as a blurred minecraft picture */
-    background-image: url("images/photos/background.jpg");
-    /* By default the image will repeat itself until the space is filled, but I just want one picture */
-    background-repeat: no-repeat;
-    /* The picture is small so it doesn't cover it all */
-    background-size: cover;
+  /* Sets the background image as a blurred minecraft picture */
+  background-image: url("images/photos/background.jpg");
+  /* By default the image will repeat itself until the space is filled, but I just want one picture */
+  background-repeat: no-repeat;
+  /* The picture is small so it doesn't cover it all */
+  background-size: cover;
 }
 
 .main-square {
-    /* Sets the background to white */
-    background-color: white;
-    /* Rounds the border */
-    border-radius: 10px;
-    box-shadow: 10px 10px 10px #21130d;
-    /* So that it doesn't fill the entire page and we can actually see the background image */
-    margin: 10%;
+  /* Sets the background to white */
+  background-color: white;
+  /* Rounds the border */
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px #21130d;
+  /* So that it doesn't fill the entire page and we can actually see the background image */
+  margin: 10%;
 }
 
 nav {
-    /* Sets the background to that color */
-    background-color: #197278;
-    /* Rounds the top corners of the border */
-    border-radius: 10px 10px 0px 0px;
+  /* Sets the background to that color */
+  background-color: #197278;
+  /* Rounds the top corners of the border */
+  border-radius: 10px 10px 0px 0px;
 }
 
-div nav div {
-    padding: 1.75% 5%;
-}
+div nav div {padding: 1.75% 5%;}
 
 nav ul {
-    /* To stay in the same line as the logo */
-    display: inline;
-    float: right;
-    padding: 0.5% 0 0 0;
-    margin: 0;
+  /* To stay in the same line as the logo */
+  display: inline;
+  float: right;
+  padding: 0.5% 0 0 0;
+  margin: 0;
     width: 270px;
 }
 
 nav li {
-    /* So that it will be a horizontal list */
-    display: inline;
-    padding-left: 5%;
+  /* So that it will be a horizontal list */
+  display: inline;
+  padding-left: 5%;
 }
 
 ul li a {
-    color: white;
-    /* By default the links have a underline, but I want it without the underline */
-    text-decoration: none;
-    /* MAKES IT UPPERCASE */
-    text-transform: uppercase;
+  color: white;
+  /* By default the links have a underline, but I want it without the underline */
+  text-decoration: none;
+  /* MAKES IT UPPERCASE */
+  text-transform: uppercase;
 }
 
-ul li a:hover {
-    color: #283D3B;
-}
+ul li a:hover {color: #283D3B;}
 
 article {
-    margin: 2.5% 10%;
-    /* Aligns everything in the center */
-    text-align: center;
+  margin: 2.5% 10%;
+  /* Aligns everything in the center */
+  text-align: center;
 }
 
-p, li {
-    text-align: justify;
-}
+p, li {text-align: justify;}
 
 section {
-    border-top: 1px solid gainsboro;
-    margin-top: 2.5%;
-    padding-top: 2.5%;
+  border-top: 1px solid gainsboro;
+  margin-top: 2.5%;
+  padding-top: 2.5%;
 }
 
-section li {
-    margin: 0 10%;
-}
+section li {margin: 0 10%;}
 
-section img {
-    border-radius: 10px;
-}
+section img {border-radius: 10px;}
 
 #github {
-    background-color: inherit;
-    border: 2px solid #8896b8b3;
-    border-radius: 10px;
-    width: 270px;
-    padding: 20px;
-    text-decoration: none;
-    color: inherit;
+  background-color: inherit;
+  border: 2px solid #8896b8b3;
+  border-radius: 10px;
+  width: 270px;
+  padding: 20px;
+  text-decoration: none;
+  color: inherit;
 }
 
-#github:hover {
-    background-color: #96b8b3;
-}
+#github:hover {background-color: #96b8b3;}
 
 footer {
-    /* Sets the background to that color */
-    background-color: #C44536;
-    /* Rounds the bottom corners of the border */
-    border-radius: 0px 0px 10px 10px;
-    color: white;
-    /* Makes it a little thicker */
-    height: 50px;
-    /* Aligns everything in the center */
-    text-align: center;
-    padding-top: 1%;
+  /* Sets the background to that color */
+  background-color: #C44536;
+  /* Rounds the bottom corners of the border */
+  border-radius: 0px 0px 10px 10px;
+  color: white;
+  /* Makes it a little thicker */
+  height: 50px;
+  /* Aligns everything in the center */
+  text-align: center;
+  padding-top: 1%;
 }
 
 #to-top {
-    font-weight: bold;
-    color: inherit;
-    text-decoration: none;
+  font-weight: bold;
+  color: inherit;
+  text-decoration: none;
 }
 
-#to-top:hover {
-    color: #772E25;
-}
+#to-top:hover {color: #772E25;}
