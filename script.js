@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
     steve = document.getElementById("steve");
     initial_left_pos = steve.getBoundingClientRect().left;
 
+    // Gets buttons positions.
     a_btn = document.getElementById("a");
     d_btn = document.getElementById("d");
 
@@ -44,11 +45,13 @@ document.addEventListener("DOMContentLoaded", function() {
         // Moves the steve if you press w or a or s or d.
         if (event.key == "a") {
             move_steve(-6);
+            // The key will turn blueish and white text.
             a_btn.style.color = "white";
             a_btn.style.backgroundColor = "#197278";
         }
         else if (event.key =="d") {
             move_steve(6);
+            // The key will turn blueish and white text.
             d_btn.style.color = "white";
             d_btn.style.backgroundColor = "#197278";
         }
@@ -56,10 +59,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
     document.addEventListener("keyup", function(event) {
         if (event.key == "a") {
+            // The key will return to normal.
             a_btn.style.color = "";
             a_btn.style.backgroundColor = "";
         }
         else if (event.key =="d") {
+            // The key will return to normal.
             d_btn.style.color = "";
             d_btn.style.backgroundColor = "";
         }
