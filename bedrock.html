@@ -2,28 +2,46 @@
 <!-- BEDROCK -->
 <html lang="en">
     <head>
+        <!-- BOOTSTRAP -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        
+        <!-- CSS -->
         <link href="styles.css" rel="stylesheet">
+
         <title>My Webpage | Bedrock</title>
         <link rel="icon" type="image/png" href="images/logos/grass.png">
         <meta name="theme-color" content="#8bb0fb">
+
+        <!-- FOR MOBILE RESPONSIVENESS -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
+        <!-- JAVASCRIPT -->
         <script src="script.js"></script>
+
+        <!-- MAIN SQUARE -->
         <div class="main_square">
+            <!-- NAVBAR -->
             <nav>
+                <!-- STEVE ON TOP OF NAVBAR --> <!-- IT'S INSIDE <NAV> BECAUSE HE NEEDS TO BE BETWEEN NAV WIDTH -->
                 <img alt="Steve Character" id="steve" src="images/steve/0.png">
-                <div id="control_steve">
+
+                <!-- WASD BUTTONS ON RIGHT SIDE --> <!-- IT'S INSIDE <NAV> WITHOUT REASON -->
+                <div id="wasd_btns">
                     <p>Try in your keyboard:</p>
                     <button id="w" disabled>w</button><br>
                     <button id="a">a</button>
-                    <button disabled>s</button>
+                    <button id="s" disabled>s</button>
                     <button id="d">d</button>
                 </div>
+
+                <!-- STUFF INSIDE NAVBAR -->
                 <div>
+                    <!-- MINECRAFT LOGO ON LEFT SIDE -->
                     <a id="logo" href="index.html"><img alt="Minecraft Logo" width="200" src="images/logos/minecraft.svg"></a>
+
+                    <!-- MENU OPTIONS ON RIGHT SIDE-->
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="java.html">Java</a></li>
@@ -32,7 +50,9 @@
                     </ul>
                 </div>
             </nav>
-            <main>
+
+            <!-- CONTENT -->
+            <article>
                 <h1>Bedrock</h1>
                 <section>
                     <h2>What is that</h2>
@@ -105,7 +125,7 @@
                         </div>
                     </div>
                 </section>
-            </main>
+            </article>
             <footer>Problem Set 8 - Homepage [CS50] - <a id="to_top" href="#">Return to top</a></footer>
         </div>
     </body>

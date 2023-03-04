@@ -18,7 +18,7 @@
     margin-top: -31px;
 }
 
-#control_steve {
+#wasd_btns {
     position: fixed;
     right: 50px;
     bottom: 50px;
@@ -26,7 +26,7 @@
     width: 100px;
 }
 
-#control_steve p {
+#wasd_btns p {
     background-color: #8896b8b3;
     border-radius: 10px;
     font-weight: bold;
@@ -35,7 +35,7 @@
     box-shadow: 10px 10px 10px #21130d;
 }
 
-#control_steve button {
+#wasd_btns button {
     border-radius: 5px;
     padding: 0;
     width: 30px;
@@ -106,7 +106,7 @@ ul li a:hover {
     color: #283D3B;
 }
 
-main {
+article {
     margin: 2.5% 10%;
     /* Aligns everything in the center */
     text-align: center;
