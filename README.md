@@ -16,7 +16,8 @@ Demorei um certo tempo para a funcionalidade do bonequinho andando emcima da pá
 
 <h2>Possíveis melhorias:</h2>
 
-* Melhor design em celulares;
+* <s>Melhor design em celulares</s>;
+* <s>Compactar imagens para o site ficar mais leve</s>;
 * Inserir classes e ids para elementos que não possuem mas estão presentes no css;
 
 <h2>Para testar:</h2>
