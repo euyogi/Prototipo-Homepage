@@ -12,13 +12,8 @@ Demorei um certo tempo para a funcionalidade do bonequinho andando emcima da pá
 * O bonequinho no topo da página é controlável pelo teclado em todas as páginas;
 * 4 Páginas com diferentes conteúdos;
 * Diversas palavras possuem links para definição ou para obter mais informações sobre o assunto;
-* Imagens para descrever o conteúdo.
-
-<h2>Possíveis melhorias:</h2>
-
-* <s>Melhor design em celulares</s>;
-* <s>Compactar imagens para o site ficar mais leve</s>;
-* Inserir classes e ids para elementos que não possuem mas estão presentes no css;
+* Imagens para descrever o conteúdo;
+* Responsividade mobile.
 
 <h2>Para testar:</h2>
 
