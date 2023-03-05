@@ -5,7 +5,7 @@ Demorei um certo tempo para a funcionalidade do bonequinho andando emcima da pá
 
 <h2>Tela inicial:</h2>
 
-![Imagem da Tela Inicial](https://user-images.githubusercontent.com/46427886/222861847-f852e0ed-562c-4f2d-ae68-11bf265c4b24.jpeg)
+![Imagem da Tela Inicial](https://user-images.githubusercontent.com/46427886/222935110-25587a48-6fb3-4a38-af4b-5d15be073fad.jpeg)
 
 <h2>Funcionalidades:</h2>
 
