@@ -3,45 +3,7 @@
     https://coolors.co/palette/283d3b-197278-edddd4-c44536-772e25
 */
 
-.flex {display: flex;}
-
-#the-god {margin-left: 20px;}
-
-#steve {
-  box-sizing: content-box;
-  position: absolute;
-  display: inline-block;
-  margin-top: -31px;
-}
-
-#wasd-buttons {
-  position: fixed;
-  right: 50px;
-  bottom: 50px;
-  padding: 0;
-  width: 100px;
-}
-
-#wasd-buttons p {
-  background-color: #8896b8b3;
-  border-radius: 10px;
-  font-weight: bold;
-  padding: 5px;
-  color: white;
-  box-shadow: 10px 10px 10px #21130d;
-}
-
-#wasd-buttons button {
-  border-radius: 5px;
-  padding: 0;
-  width: 30px;
-  height: 30px;
-  pointer-events: none;
-  box-shadow: 10px 10px 10px #21130d;
-}
-
-#w {margin: 0 0 4px 34px;}
-
+/* MOST PAGES */
 body {
   /* Sets the background image as a blurred minecraft picture */
   background-image: url("images/photos/background.jpg");
@@ -51,7 +13,56 @@ body {
   background-size: cover;
 }
 
-.main-square {
+/* THE LITTLE STEVE ABOVE NAVBAR */
+#steve {
+  /* So that I can position it where I want and it won't interfere other stuff around */
+  position: absolute;
+  /* So that it will be exactly above navbar*/
+  margin-top: -31px;
+}
+
+/* THE BUTTONS WASD ON RIGHT SIDE */
+#wasd {
+  /* So that it will be fixed where I want and it won't interfere other stuff around */
+  position: fixed;
+  /* Position it 50px of the right border */
+  right: 50px;
+  /* Position it 50px of the bottom border */
+  bottom: 50px;
+  /* Makes the div a size that fits 3 buttons */
+  width: 100px;
+}
+
+/* TEXT ABOVE WASD BUTTONS ON RIGHT SIDE */
+#wasd p {
+  /* Transparent Background */
+  background-color: #8896b8b3;
+  /* Rounded */
+  border-radius: 5px;
+  font-weight: bold;
+  /* Give some padding so that the border isn't too close to text */
+  padding: 5px;
+  color: white;
+  /* Shadow */ 
+  box-shadow: 10px 10px 10px #21130d;
+}
+
+#wasd button {
+  /* Rounded */
+  border-radius: 5px;
+  /* SIZE */
+  width: 30px;
+  height: auto;
+  /* So they are not clickable*/
+  pointer-events: none;
+  /* Shadow */
+  box-shadow: 10px 10px 10px #21130d;
+}
+
+/* W IN THE MIDDLE */
+#w {margin: 0 0 4px 34px;}
+
+#main-square {
   /* Sets the background to white */
   background-color: white;
   /* Rounds the border */
@@ -68,62 +79,70 @@ nav {
   border-radius: 10px 10px 0px 0px;
 }
 
-div nav div {padding: 1.75% 5%;}
+/* GIVE SOME SPACE FOR THE ITEMS */
+#nav-space {padding: 1.75% 5%;}
 
-nav ul {
+#menu {
   /* To stay in the same line as the logo */
   display: inline;
+  /* GO TO RIGHT SIDE */
   float: right;
+  /* Try to align to the vertical center of the nav/nav-space */
   padding: 0.5% 0 0 0;
-  margin: 0;
-    width: 270px;
+  /* Makes the menu a size that fits the items without breaking line */
+  width: 270px;
 }
 
-nav li {
+#menu li {
   /* So that it will be a horizontal list */
   display: inline;
+  /* Give some space to items */
   padding-left: 5%;
 }
 
-ul li a {
+/* YOU KNOW THAT SPACE, THE FIRST ONE WON'T HAVE IT BECAUSE IT MISALIGN STUFF WHEN IN MOBILE*/
+#menu li:first-child {padding-left: 0;}
+
+/* THE ITEMS IN MENU */
+.pag {
   color: white;
   /* By default the links have a underline, but I want it without the underline */
   text-decoration: none;
-  /* MAKES IT UPPERCASE */
+  /* Makes it uppercase */
   text-transform: uppercase;
 }
 
-ul li a:hover {color: #283D3B;}
+.pag:hover {color: #283D3B;}
 
 article {
+  /* Margin is good */
   margin: 2.5% 10%;
   /* Aligns everything in the center */
   text-align: center;
 }
 
+/* THE LINES ABOVE H2 TITLE */
+section {border-top: 1px solid gainsboro;}
+
+/* MARGIN FOR EACH H2 TITLE */
+.title {margin: 2.5% 0;}
+
+/* ALIGN STUFF */
 p, li {text-align: justify;}
 
-section {
-  border-top: 1px solid gainsboro;
-  margin-top: 2.5%;
-  padding-top: 2.5%;
-}
-
-section li {margin: 0 10%;}
-
-section img {border-radius: 10px;}
-
-#github {
-  background-color: inherit;
-  border: 2px solid #8896b8b3;
+img {
+  /* Modern images are rounded */
   border-radius: 10px;
-  width: 270px;
-  padding: 20px;
-  text-decoration: none;
-  color: inherit;
+  /* We don't want it to don't fit the screen */
+  max-width: 100%;
+  /* The height must follow the width */
+  height: auto;
 }
 
-#github:hover {background-color: #96b8b3;}
+/* MAKES THE ITEMS ON ACCORDION LISTS LESS LARGE */
+.accordion li {margin: 0 10%;}
+
+
 
 footer {
   /* Sets the background to that color */
@@ -135,6 +154,7 @@ footer {
   height: 50px;
   /* Aligns everything in the center */
   text-align: center;
+  /* ALIGN TO TEXT VERTICAL CENTER*/
   padding-top: 1%;
 }
 
@@ -145,3 +165,77 @@ footer {
 }
 
 #to-top:hover {color: #772E25;}
+
+.flex {display: flex;}
+
+/* HOME PAGE */
+#about-notch img {
+  height: 200px;
+}
+
+/* SO THAT THERE'S SOME SPACE BETWEEN IT AND THE TEXT AT THE SIDE */
+#about-notch p {margin-left: 20px;}
+
+/* ABOUT PAGE */
+#github {
+  /* It's a link, it's inline by default, but inline elements don't align to correctly? */
+  display: block;
+  background-color: inherit;
+  border: 2px solid #8896b8b3;
+  /* Rounded */
+  border-radius: 10px;
+  width: 270px;
+  /* Thicker */
+  padding: 5px 0;
+  /* Align to center and give some space at the bottom */
+  margin: 0 auto 2.5% auto;
+  text-decoration: none;
+  color: inherit;
+}
+
+#github:hover {background-color: #96b8b3;}
+
+/* SETTINGS FOR MOBILE */
+@media screen and (max-width: 800px) {
+  #main-square {
+    /* No side spacing on mobile, need more horizontal space for content */
+    margin: 10% 0;
+  }
+
+  /* ALIGN NAV ITEMS TO CENTER (LOGO) */
+  nav {text-align: center;}
+
+  #menu {
+    /* Makes the menu block so that the logo will be stacked above it */
+    display: block;
+    /* Disable the right float it had */
+    float: none;
+    /* Aligns to center */
+    margin: auto;
+  }
+
+  #wasd {
+    /* No buttons on mobile */
+    visibility: hidden;
+  }
+
+  .title {
+    /* Bigger margins, better for mobile */
+    margin: 5% 0;
+  }
+
+  .flex {
+    /* Disable flex */
+    display: block;
+  }
+
+  article, #about-notch img, #github {
+    /* Bigger bottom margin, better for mobile */
+    margin-bottom: 5%;
+  }
+
+  #about-notch p {
+    /* No side margin needed if it's centered now */
+    margin: 0;
+  }
+}

@@ -25,7 +25,7 @@
     <script src="script.js"></script>
 
     <!-- MAIN SQUARE -->
-    <div class="main-square">
+    <div id="main-square">
 
       <!-- NAVBAR -->
       <nav>
@@ -39,7 +39,7 @@
           WASD BUTTONS ON RIGHT SIDE
           IT'S INSIDE <NAV> WITHOUT REASON
         -->
-        <div id="wasd-buttons">
+        <div id="wasd">
           <p>Try in your keyboard:</p>
           <button id="w" disabled>w</button><br>
           <button id="a">a</button>
@@ -48,15 +48,15 @@
         </div>
 
         <!-- STUFF INSIDE NAVBAR -->
-        <div>
+        <div id="nav-space">
           <!-- MINECRAFT LOGO ON LEFT SIDE -->
           <a id="logo" href="index.html"><img alt="Minecraft Logo" width="200" src="images/logos/minecraft.svg"></a>
           <!-- MENU OPTIONS ON RIGHT SIDE-->
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="java.html">Java</a></li>
-            <li><a href="bedrock.html">Bedrock</a></li>
-            <li><a href="#">About</a></li>
+          <ul id="menu">
+            <li><a class="pag" href="index.html">Home</a></li>
+            <li><a class="pag" href="java.html">Java</a></li>
+            <li><a class="pag" href="bedrock.html">Bedrock</a></li>
+            <li><a class="pag" href="#">About</a></li>
           </ul>
         </div>
       </nav>
@@ -66,7 +66,7 @@
         <h1>About</h1>
 
         <section>
-          <h2>Who are you</h2>
+          <h2 class="title">Who are you</h2>
           <p>
             I am a brazilian student that loves programming, and I am taking the
             <a href="https://pll.harvard.edu/course/cs50-introduction-computer-science?delta=0"
@@ -77,7 +77,7 @@
         </section>
 
         <section>
-          <h2>Why the page</h2>
+          <h2 class="title">Why the page</h2>
           <p>
             One of CS50's problem sets is creating a homepage about something.
             It could be about myself, or some hobby, or anything else that I

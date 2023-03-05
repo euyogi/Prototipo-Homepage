@@ -25,12 +25,12 @@
     <script src="script.js"></script>
 
     <!-- MAIN SQUARE -->
-    <div class="main-square">
+    <div id="main-square">
 
       <!-- NAVBAR -->
       <nav>
         <!--
-          STEVE ON TOP OF NAVBAR
+          STEVE ABOVE NAVBAR
           IT'S INSIDE <NAV> BECAUSE HE NEEDS TO BE BETWEEN NAV WIDTH
         -->
         <img alt="Steve Character" id="steve" height="32" width="24" src="images/steve/0.png">
@@ -39,7 +39,7 @@
           WASD BUTTONS ON RIGHT SIDE
           IT'S INSIDE <NAV> WITHOUT REASON
         -->
-        <div id="wasd-buttons">
+        <div id="wasd">
           <p>Try in your keyboard:</p>
           <button id="w" disabled>w</button><br>
           <button id="a">a</button>
@@ -48,15 +48,15 @@
         </div>
 
         <!-- STUFF INSIDE NAVBAR -->
-        <div>
+        <div id="nav-space">
           <!-- MINECRAFT LOGO ON LEFT SIDE -->
           <a id="logo" href="#"><img alt="Minecraft Logo" width="200" src="images/logos/minecraft.svg"></a>
           <!-- MENU OPTIONS ON RIGHT SIDE-->
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="java.html">Java</a></li>
-            <li><a href="bedrock.html">Bedrock</a></li>
-            <li><a href="about.html">About</a></li>
+          <ul id="menu">
+            <li><a class="pag" href="#">Home</a></li>
+            <li><a class="pag" href="java.html">Java</a></li>
+            <li><a class="pag" href="bedrock.html">Bedrock</a></li>
+            <li><a class="pag" href="about.html">About</a></li>
           </ul>
         </div>
       </nav>
@@ -66,7 +66,7 @@
         <h1>Minecraft</h1>
 
         <section>
-          <h2>Definition</h2>
+          <h2 class="title">Definition</h2>
           <p>
             [Minecraft] - the word has it origins traced back to the english language,
             result of combining two words: [Mine] and [Craft], and those two words
@@ -75,7 +75,7 @@
         </section>
 
         <section>
-          <h2>What is it</h2>
+          <h2 class="title">What is it</h2>
           <p>
             Minecraft is a sandbox game where you can create your own worlds and
             experiences using building blocks and resources. It is available on multiple
@@ -93,7 +93,7 @@
         </section>
 
         <section>
-          <h2>Want to know more about it</h2>
+          <h2 class="title">Want to know more about it</h2>
           <p>
             Check the <a href="https://minecraft.fandom.com/wiki/Minecraft_Wiki"
             target="_blank">Minecraft Wiki</a>, it has pretty much everything you would
@@ -103,21 +103,23 @@
         </section>
 
         <section>
-          <h2>That looks awesome, what more can you do in it</h2>
+          <h2 class="title">That looks awesome, what more can you do in it</h2>
           <p>It has a lot of features that make it so fun like:</p>
           <!-- FROM BOOTSTRAP -->
-          <div class="accordion" id="accordionExample">
+          <div class="accordion" id="accordion-index">
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                 You can build and explore your own world using different kinds of blocks.
                 </button>
               </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion-index">
                 <div class="accordion-body">
-                  Those blocks are one-cubic-meter-sized and there are hundreds of
-                  different blocks. In addition to blocks, the environment features
-                  plants, mobs and items.
+                  <p>
+                    Those blocks are one-cubic-meter-sized and there are hundreds of
+                    different blocks. In addition to blocks, the environment features
+                    plants, mobs and items.
+                  </p>
                 </div>
                 <img alt="Blocks Picture" height="100" width="100" src="images/icons/blocks.png">
               </div>
@@ -129,30 +131,32 @@
                 spectator, or hardcore.
                 </button>
               </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion-index">
                 <div class="accordion-body">
                   <ul>
-                    <li>In survival mode you can die by many ways like starved, drowned,
+                    <li>
+                      In survival mode you can die by many ways like starved, drowned,
                       burned, killed by monsters, and more, so you have to collect
                       items, and survive. The game has achievements so even though the
                       game does not tell you the objective is accomplish those achievements
                       and in the process kill the bosses like the EnderDragon or the
                       Wither. You can die as many times as you want but you could lose
                       your items in the process.
-                    </li>
-                    <li>In creative mode you are immortal and it allow you to build
+                    </li><br>
+                    <li>
+                      In creative mode you are immortal and it allow you to build
                       anything you want because you have all the items and, you can fly
                       and more, so the only thing holding you back in that mode is your
                       creativity.
-                    </li>
+                    </li><br>
                     <li>
                       In adventure mode you can die but your interaction with the world
                       is limited, that is to experience a story that someone made for example.
-                    </li>
+                    </li><br>
                     <li>
                       In spectator mode you can fly and pass through blocks, that is
                       to watch whatever there are to be watched.
-                    </li>
+                    </li><br>
                     <li>
                       In hardcore mode you can die only once, and the world is erased
                       if you die and you lose all the progress, that is for the sigmas.
@@ -169,14 +173,16 @@
                 mods, maps, skins, and more.
                 </button>
               </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion-index">
                 <div class="accordion-body">
-                  The game already has a bunch of options to make whatever you desire
-                  but as it is easy modifiable the community creates thousands of smart
-                  new features to the game, way more than Mojang could even implement,
-                  that you can easily try out. 
+                  <p>
+                    The game already has a bunch of options to make whatever you desire
+                    but as it is easy modifiable the community creates thousands of smart
+                    new features to the game, way more than Mojang could even implement,
+                    that you can easily try out. 
+                  </p>
+                  <img alt="Book Picture" height="90" width="90" src="images/icons/book.png">
                 </div>
-                <img alt="Book Picture" height="90" width="90" src="images/icons/book.png">
               </div>
             </div>
             <div class="accordion-item">
@@ -186,26 +192,28 @@
                 is where shit gets real fun.
                 </button>
               </h2>
-              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordion-index">
                 <div class="accordion-body">
-                  The game's open-ended model allows players to create structures, creations
-                  and artwork on various competitive or collaborative multiplayer servers,
-                  including a lot of very well implemented stuff to build minigames and
-                  features, allowing for many different experiences, the community is very
-                  creative. Besides if you want to play the normal game with your friends
-                  you can enter their single-player maps and play together.
+                  <p>
+                    The game's open-ended model allows players to create structures, creations
+                    and artwork on various competitive or collaborative multiplayer servers,
+                    including a lot of very well implemented stuff to build minigames and
+                    features, allowing for many different experiences, the community is very
+                    creative. Besides if you want to play the normal game with your friends
+                    you can enter their single-player maps and play together.
+                  </p>
+                  <img alt="Multiplayer Picture" height="110" width="110" src="images/icons/multiplayer.png">
                 </div>
-                <img alt="Multiplayer Picture" height="110" width="110" src="images/icons/multiplayer.png">
               </div>
             </div>
           </div>
         </section>
 
         <section>
-          <h2>The god that created it</h2>
-          <div class="flex">
+          <h2 class="title">The god that created it</h2>
+          <div id="about-notch" class="flex">
             <img alt="Notch Picture" height="200" width="200" src="images/photos/the_god.jpg">
-            <p id="the-god">
+            <p>
               Minecraft was created by <a href="https://pt.wikipedia.org/wiki/Markus_Persson"
               target="_blank">Markus Persson</a>, a Swedish person named Markus... And he
               is a video game programmer, designer, genius, billionaire, playboy and a

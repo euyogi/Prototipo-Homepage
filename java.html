@@ -25,7 +25,7 @@
     <script src="script.js"></script>
 
     <!-- MAIN SQUARE -->
-    <div class="main-square">
+    <div id="main-square">
 
       <!-- NAVBAR -->
       <nav>
@@ -39,7 +39,7 @@
           WASD BUTTONS ON RIGHT SIDE
           IT'S INSIDE <NAV> WITHOUT REASON
         -->
-        <div id="wasd-buttons">
+        <div id="wasd">
           <p>Try in your keyboard:</p>
           <button id="w" disabled>w</button><br>
           <button id="a">a</button>
@@ -48,15 +48,15 @@
         </div>
 
         <!-- STUFF INSIDE NAVBAR -->
-        <div>
+        <div id="nav-space">
           <!-- MINECRAFT LOGO ON LEFT SIDE -->
           <a id="logo" href="index.html"><img alt="Minecraft Logo" width="200" src="images/logos/minecraft.svg"></a>
           <!-- MENU OPTIONS ON RIGHT SIDE-->
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">Java</a></li>
-            <li><a href="bedrock.html">Bedrock</a></li>
-            <li><a href="about.html">About</a></li>
+          <ul id="menu">
+            <li><a class="pag" href="index.html">Home</a></li>
+            <li><a class="pag" href="#">Java</a></li>
+            <li><a class="pag" href="bedrock.html">Bedrock</a></li>
+            <li><a class="pag" href="about.html">About</a></li>
           </ul>
         </div>
       </nav>
@@ -66,7 +66,7 @@
         <h1>Java</h1>
 
         <section>
-          <h2>The original Minecraft</h2>
+          <h2 class="title">The original Minecraft</h2>
           <p>
             The Java version of Minecraft is the original edition of the game,
             <a href="https://www.imdb.com/title/tt2011970/releaseinfo/"
@@ -77,14 +77,14 @@
             that are not present in other editions of the game, such as:
           </p>
           <!-- FROM BOOTSTRAP -->
-          <div class="accordion" id="accordionExample">
+          <div class="accordion" id="accordion-java">
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                 Support to shaders.
                 </button>
               </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion-java">
                 <div class="accordion-body">
                   <img alt="Minecraft Shaders Picture" height="400" width="711" src="images/photos/shaders.jpg">
                 </div>
@@ -96,7 +96,7 @@
                 Way better support to mods (modifications).
                 </button>
               </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion-java">
                 <div class="accordion-body">
                   <img alt="Minecraft Mods Picture" height="400" width="711" src="images/photos/mods.jpg">
                 </div>
@@ -108,7 +108,7 @@
                 Better servers and snapshots (beta versions).
                 </button>
               </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion-java">
                 <div class="accordion-body">
                   <img alt="Minecraft Server Picture" height="400" width="711" src="images/photos/server.jpg">
                 </div>
@@ -118,7 +118,7 @@
         </section>
 
         <section>
-          <h2>How can I play</h2>
+          <h2 class="title">How can I play</h2>
           <p>
             To play the Java version of Minecraft you need to download and
             install the game on your computer. You can do it through
