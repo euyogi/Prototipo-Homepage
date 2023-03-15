@@ -18,3 +18,11 @@ Demorei um certo tempo para a funcionalidade do bonequinho andando emcima da pá
 <h2>Para testar:</h2>
 
 <a align="center" href="https://euyogi.github.io/Projeto-Homepage/">Abrir Projeto-Homepage</a>
+
+<p align="center">
+Projeto feito por: Yogi Nam de Souza Barbosa
+</p>
+
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/46427886/218377101-f832c1a3-6c48-4016-92d2-0d8b6a4fafd5.gif" width="10%" alt-text="Minha imagem de perfil (umcachorro)" />
+</div>
