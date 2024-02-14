@@ -3,7 +3,7 @@
 # Prototipo-Homepage
 A ideia era um site sobre o jogo Minecraft, acho que ficou bem informativo, principalmente pelo conteúdo ser adaptado do Minecraft Wiki.
 No meu notebook está funcionando muito bem, mas melhorias ainda são possiveis.
-Demorei um certo tempo para a funcionalidade do bonequinho andando emcima da página funcionar então estou feliz que funcionou no fim.
+Demorei um certo tempo para a funcionalidade do bonequinho andando em cima da página funcionar então estou feliz que funcionou no fim.
 
 <h2>Para testar:</h2>
 
