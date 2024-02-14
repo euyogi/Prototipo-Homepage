@@ -1,7 +1,13 @@
-# Projeto-Homepage
+<img alt="Header" width=100% src="https://capsule-render.vercel.app/api?type=waving&color=40E0D0&height=100&section=header">
+
+# Prototipo-Homepage
 A ideia era um site sobre o jogo Minecraft, acho que ficou bem informativo, principalmente pelo conteúdo ser adaptado do Minecraft Wiki.
 No meu notebook está funcionando muito bem, mas melhorias ainda são possiveis.
 Demorei um certo tempo para a funcionalidade do bonequinho andando emcima da página funcionar então estou feliz que funcionou no fim.
+
+<h2>Para testar:</h2>
+
+<a align="center" href="https://euyogi.github.io/Prototipo-Homepage/">Abrir Prototipo-Homepage</a>
 
 <h2>Tela inicial:</h2>
 
@@ -15,14 +21,8 @@ Demorei um certo tempo para a funcionalidade do bonequinho andando emcima da pá
 * Imagens para descrever o conteúdo;
 * Responsividade mobile.
 
-<h2>Para testar:</h2>
-
-<a align="center" href="https://euyogi.github.io/Projeto-Homepage/">Abrir Projeto-Homepage</a>
-
 <p align="center">
-Projeto feito por: Yogi Nam de Souza Barbosa
+Feito por: Yogi Nam de Souza Barbosa
 </p>
 
-<div align="center">
-  <img src="https://user-images.githubusercontent.com/46427886/218377101-f832c1a3-6c48-4016-92d2-0d8b6a4fafd5.gif" width="10%" alt-text="Minha imagem de perfil (umcachorro)" />
-</div>
+<img alt="Footer" width=100% src="https://capsule-render.vercel.app/api?type=waving&color=40E0D0&height=100&section=footer">
